@@ -9,7 +9,7 @@ Rscript -e "rmarkdown::render_site()"
 # let's zip the file for upload
 cp -a _site/. /home/adrien/github/adrienmeli.github.io/
 cd /home/adrien/github/adrienmeli.github.io/
-git checkout gh-pages
+git checkout master
 git add .
 git commit -m "New commit"
 git push -u origin gh-pages
