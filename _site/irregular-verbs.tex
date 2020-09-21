@@ -1,0 +1,485 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Les verbes irréguliers anglais},
+  pdfauthor={Adrien Méli},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\usepackage[normalem]{ulem}
+% Avoid problems with \sout in headers with hyperref
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{fontawesome}
+\usepackage{amsmath}
+\usepackage{tipa}
+\usepackage{moodle}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[light,sfdefault]{roboto}
+%\usepackage{fourier}
+%\usepackage{montserrat}
+%\usepackage[T1]{fontenc}
+%\usepackage[french]{babel}
+
+% -----------------------------------------------------------------
+% Hyper Setup
+% -----------------------------------------------------------------
+\hypersetup{
+    %bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat�s bookmarks
+    pdftoolbar=true,        % show Acrobat�s toolbar?
+    pdfmenubar=true,        % show Acrobat�s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    %pdftitle={},    % title
+    pdfauthor={Adrien Meli},     % author 
+    pdfsubject={Phonological rules},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={Second Language Acquisition, French, English, phonology}, % list of keywords
+    pdfnewwindow=true,     % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links
+    citecolor=black,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue,           % color of external links
+    bookmarksopen=false,
+    anchorcolor=black,
+    bookmarksnumbered=true,
+    pdfpagemode=UseOutlines,    %None/UseOutlines/UseThumbs/FullScreen
+    linktocpage=true
+}
+
+% ********************Captions and Hyperreferencing / URL **********************
+
+% Captions: This makes captions of figures use a boldfaced small font.
+
+\usepackage[margin=10pt,font=small,labelfont=bf,labelsep=endash]{caption}
+
+% -----------------------------------------------------------------
+% TABLE OF CONTENTS
+% -----------------------------------------------------------------
+\usepackage[dotinlabels]{titletoc}
+\titlecontents{section}[0em] % entries are pushed to the rtight
+  {} % code to change the appearance
+  {} % section number: increase distance to push to the left
+  {\hspace*{3.3em}}
+  {\titlerule*[1.9mm]{.}\contentspage}
+% remove subsections from TOC
+\setcounter{tocdepth}{1}
+
+% multi-line curly brackets
+
+\newenvironment{rightbracedtext}
+ {$\kern-\nulldelimiterspace\left.\begin{tabular}{@{}l@{}}}
+ {\end{tabular}\right\}$}
+
+\newenvironment{leftbracedtext}{$\left\{\begin{tabular}{@{}l}}{\end{tabular}\right.$}
+
+%----------------------------------------------------------------------------------------
+%	MARGINS
+%----------------------------------------------------------------------------------------
+
+%\usepackage{geometry} % Required for adjusting page dimensions and margins
+%
+%\geometry{
+%	paper=a4paper, % Change to letterpaper for US letter
+%	top=3cm, % Top margin
+%	bottom=3cm, % Bottom margin
+%	left=2cm, % Left margin
+%	right=3cm, % Right margin
+%	headheight=14pt, % Header height
+%	footskip=1.4cm, % Space from the bottom margin to the baseline of the footer
+%	headsep=1.2cm, % Space from the top margin to the baseline of the header
+%	%showframe, % Uncomment to show how the type block is set on the page
+%}
+
+\title{Les verbes irréguliers anglais}
+\author{Adrien Méli}
+\date{April 15, 2020}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{principes}{%
+\section{Principes}\label{principes}}
+
+Les verbes irréguliers s'apprennent en trois colonnes :
+
+\begin{itemize}
+\item
+  La \textbf{Base Verbale} (BV)
+\item
+  Le \textbf{Prétérit}
+\item
+  Le \textbf{Participe passé}
+\end{itemize}
+
+\hypertarget{la-base-verbale-bv}{%
+\subsection{La Base Verbale (BV)}\label{la-base-verbale-bv}}
+
+Précédée de \emph{to}, la Base Verbale constitue ce que l'on appelle l'infinitif.
+
+À noter que le \textbf{présent simple}, utilisé pour parler des habitudes et vérités générales, ressemble à s'y méprendre à la BV.
+La seule différence visible est à la troisième personne du singulier, où le verbe prend un \emph{\textless-s\textgreater{}}\footnote{Ceci est valable pour tous les verbes sauf \emph{BE}, \emph{HAVE}, et les 5 auxiliaires modaux, qui sont invariables.}.
+
+\hypertarget{le-pruxe9tuxe9rit}{%
+\subsection{Le prétérit}\label{le-pruxe9tuxe9rit}}
+
+Des trois formes, le prétérit est la seule qui soit véritablement \textbf{conjuguée}.
+
+On utilise le prétérit pour parler du passé.
+
+Pour rappel, pour qu'une phrase soit correcte, il faut qu'elle ait un groupe nominal sujet qui gouverne un verbe conjugué.
+
+Prenons par exemple le verbe \emph{forget} (\emph{forgot, forgotten}) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \sout{\textcolor{red}{*John forget*}}
+\item
+  \textbf{\textcolor{green}{*John forgot*}}
+\item
+  \sout{\textcolor{red}{*John forgotten*}}
+\end{enumerate}
+
+Des trois suggestions ci-dessus, seule la deuxième, \textbf{\textcolor{green}{*John forgot*}} (``John a oublié''), est correcte.
+
+\hypertarget{le-participe-passuxe9}{%
+\subsection{Le participe passé}\label{le-participe-passuxe9}}
+
+Le participe passé s'emploie avec \emph{HAVE} ou \emph{BE}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Avec \emph{HAVE} :} Le participe passé permet de renvoyer à une action qui est envisagée comme passée.
+  Le fait qu'il ne soit pas conjugué permet de combiner ce renvoi au passé avec l'expression d'hypothèses ou de situations irréelles.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Exemple : \emph{John must have forgotten} \(\rightarrow\) ``John a dû oublier''.
+  \end{itemize}
+\item
+  \textbf{Avec \emph{BE} :} le participe passé revêt alors un \textbf{\textcolor{red}{sens passif}}. Le sujet du verbe subit l'action.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Exemple : \emph{The book was written in 1932} \(\rightarrow\) ``Le livre a été écrit en 1932''.
+  \end{itemize}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{\textcolor{red}{Rappel :}}
+
+\begin{quote}
+Les verbes réguliers fonctionnent selon les mêmes principes.
+
+Ils sont appelés ``réguliers'' parce que leur prétérit et leur participe passé se construisent en ajoutant le suffixe \textless-(e)d\textgreater{} à leur BV :
+
+\begin{itemize}
+\item
+  \emph{play} \(\rightarrow\) \emph{played, played}
+\item
+  \emph{decide} \(\rightarrow\) \emph{decided, decided}
+\end{itemize}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{tableau-des-verbes-irruxe9guliers}{%
+\section{Tableau des verbes irréguliers}\label{tableau-des-verbes-irruxe9guliers}}
+
+\begin{longtable}{>{\bfseries\raggedright\arraybackslash}p{3cm}ll>{\bfseries\raggedright\arraybackslash}p{3cm}}
+\toprule
+Base Verbale & Prétérit & Participe passé & Traduction\\
+\midrule
+\rowcolor{gray!6}  beat & beat & beaten & battre (coeur)\\
+
+become & became & become & devenir\\
+
+\rowcolor{gray!6}  begin & began & begun & commencer\\
+
+bend & bent & bent & (se) courber\\
+
+\rowcolor{gray!6}  bet & bet & bet & parier\\
+
+bind & bound & bound & relier (livre)\\
+
+\rowcolor{gray!6}  bite & bit & bitten & mordre\\
+
+bleed & bled & bled & saigner\\
+
+\rowcolor{gray!6}  blow & blew & blown & souffler\\
+
+break & broke & broken & casser\\
+
+\rowcolor{gray!6}  breed & bred & bred & élever\\
+
+bring & brought & brought & apporter\\
+
+\rowcolor{gray!6}  build & built & built & construire\\
+
+burn & burnt & burnt & brûler\\
+
+\rowcolor{gray!6}  buy & bought & bought & acheter\\
+
+catch & caught & caught & attraper\\
+
+\rowcolor{gray!6}  choose & chose & chosen & choisir\\
+
+come & came & come & venir\\
+
+\rowcolor{gray!6}  cost & cost & cost & coûter\\
+
+cut & cut & cut & couper\\
+
+\rowcolor{gray!6}  do & did & done & faire (auxiliaire)\\
+
+dig & dug & dug & creuser\\
+
+\rowcolor{gray!6}  draw & drew & drawn & dessiner\\
+
+dream & dreamt & dreamt & rêver\\
+
+\rowcolor{gray!6}  drink & drank & drunk & boire\\
+
+drive & drove & driven & conduire\\
+
+\rowcolor{gray!6}  eat & ate & eaten & manger\\
+
+fall & fell & fallen & tomber\\
+
+\rowcolor{gray!6}  feed & fed & fed & nourrir\\
+
+feel & felt & felt & (res)sentir\\
+
+\rowcolor{gray!6}  fight & fought & fought & se battre\\
+
+find & found & found & trouver\\
+
+\rowcolor{gray!6}  fly & flew & flown & voler (oiseau)\\
+
+forget & forgot & forgotten & oublier\\
+
+\rowcolor{gray!6}  forgive & forgave & forgiven & pardonner\\
+
+freeze & froze & frozen & geler\\
+
+\rowcolor{gray!6}  get & got & got & obtenir\\
+
+give & gave & given & donner\\
+
+\rowcolor{gray!6}  go & went & gone & aller\\
+
+grow & grew & grown & grandir\\
+
+\rowcolor{gray!6}  have & had & had & avoir\\
+
+hear & heard & heard & entendre\\
+
+\rowcolor{gray!6}  hide & hid & hidden & cacher\\
+
+hit & hit & hit & frapper\\
+
+\rowcolor{gray!6}  hold & held & held & tenir\\
+
+hurt & hurt & hurt & faire mal\\
+
+\rowcolor{gray!6}  keep & kept & kept & garder\\
+
+know & knew & known & savoir\\
+
+\rowcolor{gray!6}  lay & laid & laid & poser\\
+
+lead & led & led & mener\\
+
+\rowcolor{gray!6}  lean & leant & leant & pencher\\
+
+leave & left & left & quitter\\
+
+\rowcolor{gray!6}  lend & lent & lent & prêter\\
+
+let & let & let & laisser\\
+
+\rowcolor{gray!6}  lose & lost & lost & perdre\\
+
+make & made & made & fabriquer\\
+
+\rowcolor{gray!6}  mean & meant & meant & signifier\\
+
+meet & met & met & rencontrer\\
+
+\rowcolor{gray!6}  pay & paid & paid & payer\\
+
+put & put & put & mettre\\
+
+\rowcolor{gray!6}  quit & quit & quit & arrêter\\
+
+read & read & read & lire\\
+
+\rowcolor{gray!6}  ride & rode & ridden & aller en (véhicule)\\
+
+ring & rang & rung & sonner\\
+
+\rowcolor{gray!6}  rise & rose & risen & monter\\
+
+run & ran & run & courir\\
+
+\rowcolor{gray!6}  say & said & said & dire\\
+
+see & saw & seen & voir\\
+
+\rowcolor{gray!6}  sell & sold & sold & vendre\\
+
+send & sent & sent & envoyer\\
+
+\rowcolor{gray!6}  set & set & set & régler (machine)\\
+
+shake & shook & shaken & secouer\\
+
+\rowcolor{gray!6}  shine & shone & shone & briller\\
+
+shoe & shod & shod & chausser (rare)\\
+
+\rowcolor{gray!6}  shoot & shot & shot & tirer\\
+
+show & showed & shown & montrer\\
+
+\rowcolor{gray!6}  shrink & shrank & shrunk & rétrécir\\
+
+shut & shut & shut & fermer\\
+
+\rowcolor{gray!6}  sing & sang & sung & chanter\\
+
+sink & sank & sunk & couler\\
+
+\rowcolor{gray!6}  sit & sat & sat & s'asseoir\\
+
+sleep & slept & slept & dormir\\
+
+\rowcolor{gray!6}  speak & spoke & spoken & parler\\
+
+spend & spent & spent & dépenser\\
+
+\rowcolor{gray!6}  spill & spilt & spilt & renverser\\
+
+spread & spread & spread & répandre\\
+
+\rowcolor{gray!6}  speed & sped & sped & aller très/trop vite\\
+
+stand & stood & stood & se tenir debout\\
+
+\rowcolor{gray!6}  steal & stole & stolen & voler (crime)\\
+
+stick & stuck & stuck & planter\\
+
+\rowcolor{gray!6}  sting & stung & stung & piquer\\
+
+stink & stank & stunk & puer\\
+
+\rowcolor{gray!6}  swear & swore & sworn & jurer\\
+
+sweep & swept & swept & balayer\\
+
+\rowcolor{gray!6}  swim & swam & swum & nager\\
+
+swing & swung & swung & osciller\\
+
+\rowcolor{gray!6}  take & took & taken & prendre\\
+
+teach & taught & taught & enseigner\\
+
+\rowcolor{gray!6}  tear & tore & torn & déchirer\\
+
+tell & told & told & raconter\\
+
+\rowcolor{gray!6}  think & thought & thought & penser\\
+
+throw & threw & thrown & jeter\\
+
+\rowcolor{gray!6}  understand & understood & understood & comprendre\\
+
+wake & woke & woken & réveiller\\
+
+\rowcolor{gray!6}  wear & wore & worn & porter (vêtement)\\
+
+win & won & won & gagner\\
+
+\rowcolor{gray!6}  write & wrote & written & écrire\\
+\bottomrule
+\end{longtable}
+
+\end{document}

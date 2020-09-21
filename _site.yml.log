@@ -1,0 +1,5 @@
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to '_site.utf8' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+
+Output created: _site.html
