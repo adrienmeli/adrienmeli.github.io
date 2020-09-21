@@ -1,5 +1,0 @@
----
-title: "My Website"
----
-
-Hello, **NEW** SUPER Website!

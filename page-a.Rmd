@@ -1,5 +1,0 @@
----
-title: "This is page-a"
----
-
-Go figure!

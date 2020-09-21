@@ -11,11 +11,11 @@
 
 <meta name="author" content="Adrien Méli" />
 
-<meta name="date" content="2020-04-15" />
+<meta name="date" content="2020-09-21" />
 
 <title>Les verbes irréguliers anglais</title>
 
-<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -29,6 +29,7 @@
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -350,7 +351,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">My Website</a>
+      <a class="navbar-brand" href="index.html">adrienmeli.github.io</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -420,7 +421,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Les verbes irréguliers anglais</h1>
 <h4 class="author">Adrien Méli</h4>
-<h4 class="date">April 15, 2020</h4>
+<h4 class="date">September 21, 2020</h4>
 
 </div>
 
@@ -483,6 +484,28 @@ text-align: justify}
 </div>
 <div id="tableau-des-verbes-irréguliers" class="section level1">
 <h1>Tableau des verbes irréguliers</h1>
+<pre class="r"><code>library(tidyverse)
+df &lt;- read_csv(&quot;data/irregular-verbs.csv&quot;,  col_names=TRUE)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   `Base Verbale` = col_character(),
+##   Prétérit = col_character(),
+##   `Participe passé` = col_character(),
+##   Traduction = col_character()
+## )</code></pre>
+<pre class="r"><code>if (knitr::is_latex_output()) {
+  knitr::kable(df, &quot;latex&quot;, booktabs = T, longtable = T) %&gt;%
+    column_spec(c(1,4), bold = T, width = &quot;3cm&quot;) %&gt;%
+    collapse_rows(columns = 1:2, valign = &quot;top&quot;,latex_hline = &quot;none&quot;) %&gt;%
+    kable_styling(latex_options = c(&quot;scale_down&quot;,&quot;striped&quot;),position = &quot;center&quot;)
+
+} else if (knitr::is_html_output()) {
+  knitr::kable(df, col.names=NULL, captions=NULL) %&gt;%
+    kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;, &quot;responsive&quot;)) %&gt;%
+    column_spec(c(1,4), bold = T) %&gt;%
+    collapse_rows(columns = 1:2, valign = &quot;top&quot;)
+
+} </code></pre>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
@@ -2044,7 +2067,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
