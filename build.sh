@@ -12,5 +12,5 @@ cd /home/adrien/github/adrienmeli.github.io/
 git checkout master
 git add .
 git commit -m "New commit"
-git push -u origin gh-pages
+git push -u origin master
 
