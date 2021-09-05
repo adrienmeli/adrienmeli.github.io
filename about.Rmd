@@ -1,0 +1,11 @@
+---
+title: "About this site"
+description: |
+  Some additional details about the website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+oe Biden a averti aujourd'hui qu'une attaque était «très probable» contre l'aéroport de Kaboul «dans les 24 à 36 heures», tout en affirmant que la frappe américaine qui a tué deux membres de l'Etat islamique ne serait pas «la dernière». «La situation sur les lieux reste extrêmement dangereuse et la menace d'une attaque terroriste contre l'aéroport demeure élevée», a écrit le président américain dans un communiqué, après avoir rencontré ses conseillers militaires et de sécurité. «Nos commandants m'ont informé qu'une attaque était très probable dans les 24 à 36 heures».

@@ -1,0 +1,24 @@
+---
+title: "Hey,"
+description: |
+  You've just hit Adrien Méli's webpage.
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+This is what you'll find here:
+
+* lessons
+  
+* stuff I've worked on
+
+* stuff I'm working on
+
+Drop me an email at `adrienmeli <at> gmail.com` for feedback.

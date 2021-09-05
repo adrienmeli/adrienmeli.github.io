@@ -1,0 +1,39 @@
+name: "adrienmeli.github.io"
+title: ""
+description: |
+  This is my website!!!
+output_dir: "_site"
+theme: theme.css
+navbar:
+  logo:
+    image: images/logo.png
+  search: false
+  right:
+    - icon: fas fa-home
+      href: index.html
+    - text: "Estienne"
+      menu:
+        - text: "DNMADE Year 1"
+          href: dn1.html
+        - text: "DNMADE Year 2"
+          href: dn2.html
+        - text: "DNMADE Year 3"
+          href: dn3.html
+        - text: "---"
+        - text: "BTS ERPC Year 1"
+          href: erpc1.html
+        - text: "BTS ERPC Year 2"
+          href: erpc2.html
+    - text: "Gustave Eiffel"
+      menu:
+        - text: "L1 Phonology"
+          href: phono1.html
+        - text: "L2 Phonology"
+          href: phono2.html
+        - text: "L3 Phonology"
+          href: phono3.html
+    - text: "About"
+      href: about.html
+    - icon: fab fa-github
+      href: https://github.com/adrienmeli
+output: distill::distill_article
