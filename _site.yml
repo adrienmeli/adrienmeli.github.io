@@ -1,8 +1,9 @@
-name: "adrienmeli.github.io"
+name: "adrienmeli.xyz"
 title: ""
 description: |
   This is my website!!!
-output_dir: "_site"
+output_dir: "docs"
+favicon: images/logo.png
 theme: theme.css
 navbar:
   logo:
@@ -14,24 +15,32 @@ navbar:
     - text: "Estienne"
       menu:
         - text: "DNMADE Year 1"
-          href: dn1.html
+          href: https://adrienmeli.github.io/dn1/
         - text: "DNMADE Year 2"
-          href: dn2.html
+          href: https://adrienmeli.github.io/dn2/
         - text: "DNMADE Year 3"
-          href: dn3.html
+          href: https://adrienmeli.github.io/dn3/
         - text: "---"
         - text: "BTS ERPC Year 1"
-          href: erpc1.html
+          href: https://adrienmeli.github.io/bts1/
         - text: "BTS ERPC Year 2"
-          href: erpc2.html
+          href: https://adrienmeli.github.io/bts2/
     - text: "Gustave Eiffel"
       menu:
         - text: "L1 Phonology"
-          href: phono1.html
+          href: https://adrienmeli.github.io/phonol1/
         - text: "L2 Phonology"
-          href: phono2.html
+          href: https://adrienmeli.github.io/phonol2/
         - text: "L3 Phonology"
-          href: phono3.html
+          href: https://adrienmeli.github.io/phonol3/
+    - text: "2020/2021 lessons"
+      menu:
+        - text: "Estienne"
+          href: https://adrienmeli.github.io/estienne/
+        - text: "Phonologie anglaise LEA1 (Gustave Eiffel)"
+          href: https://adrienmeli.github.io/eiffel-l1phonology
+        - text: "Phonologie anglaise LCA3 (Gustave Eiffel)"
+          href: https://adrienmeli.github.io/eiffel-l3phonology
     - text: "About"
       href: about.html
     - icon: fab fa-github

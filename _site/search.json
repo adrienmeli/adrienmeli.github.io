@@ -5,8 +5,8 @@
       "title": "About this site",
       "description": "Some additional details about the website",
       "author": [],
-      "contents": "\noe Biden a averti aujourd’hui qu’une attaque était «très probable» contre l’aéroport de Kaboul «dans les 24 à 36 heures», tout en affirmant que la frappe américaine qui a tué deux membres de l’Etat islamique ne serait pas «la dernière». «La situation sur les lieux reste extrêmement dangereuse et la menace d’une attaque terroriste contre l’aéroport demeure élevée», a écrit le président américain dans un communiqué, après avoir rencontré ses conseillers militaires et de sécurité. «Nos commandants m’ont informé qu’une attaque était très probable dans les 24 à 36 heures».\n\n\n\n",
-      "last_modified": "2021-08-30T22:07:32+02:00"
+      "contents": "\nSite built with:\nVim\n\\(R\\)\n\n\n\n",
+      "last_modified": "2021-09-14T23:28:20+02:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,7 @@
       "description": "You've just hit Adrien Méli's webpage.\n",
       "author": [],
       "contents": "\nThis is what you’ll find here:\nlessons\nstuff I’ve worked on\nstuff I’m working on\nDrop me an email at adrienmeli <at> gmail.com for feedback.\n\n\n\n",
-      "last_modified": "2021-08-30T22:07:35+02:00"
+      "last_modified": "2021-09-14T23:28:21+02:00"
     }
   ],
   "collections": []
