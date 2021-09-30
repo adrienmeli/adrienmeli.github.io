@@ -1,0 +1,21 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\nSite built with:\nVim\n\\(R\\)\n\n\n\n",
+      "last_modified": "2021-09-30T09:20:33+02:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Hey,",
+      "description": "You've just hit Adrien Méli's webpage.\n",
+      "author": [],
+      "contents": "\nThis is what you’ll find here:\nlessons\nstuff I’ve worked on\nstuff I’m working on\nDrop me an email at adrienmeli <at> gmail.com for feedback.\n\n\n\n",
+      "last_modified": "2021-09-30T09:20:34+02:00"
+    }
+  ],
+  "collections": []
+}
