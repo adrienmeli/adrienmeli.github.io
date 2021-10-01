@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\nSite built with:\nVim\n\\(R\\)\n\n\n\n",
-      "last_modified": "2021-09-30T21:15:26+02:00"
+      "last_modified": "2021-10-01T11:08:51+02:00"
     },
     {
       "path": "index.html",
@@ -14,21 +14,21 @@
       "description": "You've just hit Adrien Méli's webpage.\n",
       "author": [],
       "contents": "\nThis is what you’ll find here:\nlessons\nstuff I’ve worked on\nstuff I’m working on\nDrop me an email at adrienmeli <at> gmail.com for feedback.\n\n\n\n",
-      "last_modified": "2021-09-30T21:15:27+02:00"
+      "last_modified": "2021-10-01T11:08:52+02:00"
     },
     {
       "path": "offsetprinting.html",
       "title": "Offset Printing",
       "author": [],
       "contents": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstienne\n \n▾\n\n\nDNMADE Year 1\nDNMADE Year 2\nDNMADE Year 3\nBTS ERPC Year 1\nBTS ERPC Year 2\n\n\n\n\nGustave Eiffel\n \n▾\n\n\nL1 Phonology\nL2 Phonology\nL3 Phonology\n\n\n\n\n2020/2021 lessons\n \n▾\n\n\nEstienne\nPhonologie anglaise LEA1 (Gustave Eiffel)\nPhonologie anglaise LCA3 (Gustave Eiffel)\n\n\nAbout\n\n\nVideo\n \n▾\n\n\nBTS ERPC Year 1\nDNMADE Year 1\n\n\n\n\n\n☰\n\nOffset Printing\n\n\n\n\n\n\n\n\n\n\n\n\n:wqa!\n\n\n\n\n\n\n\n\n\n\n  (function () {\n    var script = document.createElement(\"script\");\n    script.type = \"text/javascript\";\n    script.src  = \"https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\";\n    document.getElementsByTagName(\"head\")[0].appendChild(script);\n  })();\n",
-      "last_modified": "2021-09-30T21:15:31+02:00"
+      "last_modified": "2021-10-01T11:08:56+02:00"
     },
     {
       "path": "siliconvalley.html",
       "title": "A school in Silicon Valley",
       "author": [],
       "contents": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstienne\n \n▾\n\n\nDNMADE Year 1\nDNMADE Year 2\nDNMADE Year 3\nBTS ERPC Year 1\nBTS ERPC Year 2\n\n\n\n\nGustave Eiffel\n \n▾\n\n\nL1 Phonology\nL2 Phonology\nL3 Phonology\n\n\n\n\n2020/2021 lessons\n \n▾\n\n\nEstienne\nPhonologie anglaise LEA1 (Gustave Eiffel)\nPhonologie anglaise LCA3 (Gustave Eiffel)\n\n\nAbout\n\n\nVideo\n \n▾\n\n\nBTS ERPC Year 1\nDNMADE Year 1\n\n\n\n\n\n☰\n\nA school in Silicon Valley\n\n\n\n\n\n\n\n\n\n\n\n\n:wqa!\n\n\n\n\n\n\n\n\n\n\n  (function () {\n    var script = document.createElement(\"script\");\n    script.type = \"text/javascript\";\n    script.src  = \"https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\";\n    document.getElementsByTagName(\"head\")[0].appendChild(script);\n  })();\n",
-      "last_modified": "2021-09-30T21:15:32+02:00"
+      "last_modified": "2021-10-01T11:08:57+02:00"
     }
   ],
   "collections": []
